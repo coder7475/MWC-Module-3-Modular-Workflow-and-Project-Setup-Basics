@@ -1,6 +1,6 @@
 # MWC-Module-3-Modular-Workflow-and-Project-Setup-Basics
 
-Extended Problem Statement:
+Problem Statement:
 
 Business Context:
 
