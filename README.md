@@ -15,8 +15,11 @@ Support targeted intervention programs for economic development
 ## Key Stakeholders
 
 **Policy Makers:** For evidence-based policy development
+
 **Financial Institutions:** For risk assessment and product development
+
 **Social Services:** For resource allocation and program planning
+
 **Research Organizations:** For socio-economic studies
 
 # Dataset Details:
