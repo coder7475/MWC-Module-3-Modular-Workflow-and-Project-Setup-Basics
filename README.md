@@ -5,7 +5,8 @@
 ## Business Context:
 
 
-The project aims to develop a machine learning system that predicts individual income levels based on demographic and employment data
+The project aims to develop a machine learning system that predicts individual income levels based on demographic and employment data.
+
 The prediction boundary is set at $50,000 annually (binary classification problem).
 
 The solution will help in understanding socio-economic factors affecting income levels.
