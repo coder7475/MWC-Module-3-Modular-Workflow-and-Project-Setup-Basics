@@ -1,0 +1,8 @@
+[ 2024-11-15 09:30:33,408 ] 24 root - INFO - Data Ingestion started
+[ 2024-11-15 09:30:33,409 ] 26 root - INFO - Data Reading using Pandas library from local system
+[ 2024-11-15 09:30:33,409 ] 47 root - INFO - Error occured in data ingestion stage
+[ 2024-11-15 09:30:33,410 ] 51 root - ERROR - 
+Error occurred in Python script:
+→ File: /home/tahnik/MWC-Module-3-Modular-Workflow-and-Project-Setup-Basics/src/components/data_ingestion.py
+→ Line number: 27
+→ Error message: [Errno 2] No such file or directory: 'notbook/data/income_cleandata.csv'
