@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/750255669399262063/676caf59ef8446389abdb81468670673/artifacts
+end_time: 1731923601827
+entry_point_name: ''
+experiment_id: '750255669399262063'
+lifecycle_stage: active
+run_id: 676caf59ef8446389abdb81468670673
+run_name: best_model_summary_training_run_20241118_155037
+run_uuid: 676caf59ef8446389abdb81468670673
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731923601281
+status: 3
+tags: []
+user_id: tahnik

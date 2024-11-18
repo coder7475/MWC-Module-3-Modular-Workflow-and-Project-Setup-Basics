@@ -1,0 +1,16 @@
+[ 2024-11-18 17:27:40,808 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.60.153:5000
+[ 2024-11-18 17:27:40,808 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-11-18 17:27:40,809 ] 97 werkzeug - INFO -  * Restarting with stat
+[ 2024-11-18 17:27:41,460 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-18 17:27:41,460 ] 97 werkzeug - INFO -  * Debugger PIN: 168-959-975
+[ 2024-11-18 17:27:52,120 ] 51 root - ERROR - 
+Error occurred in Python script:
+→ File: /home/tahnik/MWC-Module-3-Modular-Workflow-and-Project-Setup-Basics/src/utils.py
+→ Line number: 18
+→ Error message: [Errno 2] No such file or directory: 'artifacts/data_transformation/preprcessor.pkl'
+[ 2024-11-18 17:27:52,121 ] 97 werkzeug - INFO - 127.0.0.1 - - [18/Nov/2024 17:27:52] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+[ 2024-11-18 17:29:34,131 ] 97 werkzeug - INFO -  * Detected change in '/home/tahnik/MWC-Module-3-Modular-Workflow-and-Project-Setup-Basics/src/pipelines/prediction_pipeline.py', reloading
+[ 2024-11-18 17:29:34,279 ] 97 werkzeug - INFO -  * Restarting with stat

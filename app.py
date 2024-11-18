@@ -1,38 +1,47 @@
-from src.logger import logging  # Import our custom logger
+from flask import Flask, request, jsonify
+from src.pipelines.prediction_pipeline import PredictionPipeline, CustomClass
 
-def main():
+app = Flask(__name__)
+
+@app.route("/predict", methods=["POST"])
+def predict():
     try:
-        logging.info("Starting the main function")
+        # Get JSON data from request
+        json_data = request.get_json()
         
-        # Simulate some application steps
-        logging.info("Step 1: Initializing application")
-        x = 5
-        y = 10
-        
-        logging.info(f"Step 2: Performing calculation with values x={x} and y={y}")
-        result = x + y
-        
-        logging.info(f"Step 3: Calculation complete. Result: {result}")
-        
-        # Simulate a warning condition
-        if result > 10:
-            logging.warning(f"Result {result} is greater than threshold (10)")
-            
+        # Create CustomClass instance with JSON data
+        data = CustomClass(
+            age=int(json_data.get("age")),
+            workclass=int(json_data.get("workclass")),
+            education_num=int(json_data.get("education_num")),
+            marital_status=int(json_data.get("marital_status")),
+            occupation=int(json_data.get("occupation")),
+            relationship=int(json_data.get("relationship")),
+            race=int(json_data.get("race")),
+            sex=int(json_data.get("sex")),
+            capital_gain=int(json_data.get("capital_gain")),
+            capital_loss=int(json_data.get("capital_loss")),
+            hours_per_week=int(json_data.get("hours_per_week")),
+            native_country=int(json_data.get("native_country"))
+        )
+
+        # Get prediction
+        final_data = data.get_data_DataFrame()
+        pipeline_prediction = PredictionPipeline()
+        pred = pipeline_prediction.predict(final_data)
+
+        # Return prediction result
+        return jsonify({
+            "status": "success",
+            "prediction": int(pred[0]),
+            "income_category": "<=50K" if pred[0] == 0 else ">50K"
+        })
+
     except Exception as e:
-        logging.error("An error occurred in main function", exc_info=True)
-        raise e
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 400
 
 if __name__ == "__main__":
-    logging.info("="*50)  # This will create a line of = for visual separation
-    logging.info("Application execution has started")
-    logging.info("="*50)
-    
-    try:
-        main()
-        logging.info("Application completed successfully")
-    except Exception as e:
-        logging.error("Application failed", exc_info=True)
-    finally:
-        logging.info("="*50)
-        logging.info("Application execution has ended")
-        logging.info("="*50)
+    app.run(host="0.0.0.0", debug=True)

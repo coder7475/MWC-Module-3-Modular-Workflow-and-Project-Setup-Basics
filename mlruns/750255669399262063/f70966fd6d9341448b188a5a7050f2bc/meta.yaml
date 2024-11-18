@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/750255669399262063/f70966fd6d9341448b188a5a7050f2bc/artifacts
+end_time: 1731923574698
+entry_point_name: ''
+experiment_id: '750255669399262063'
+lifecycle_stage: active
+run_id: f70966fd6d9341448b188a5a7050f2bc
+run_name: DecisionTree_training_run_20241118_155037
+run_uuid: f70966fd6d9341448b188a5a7050f2bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731923546133
+status: 3
+tags: []
+user_id: tahnik
