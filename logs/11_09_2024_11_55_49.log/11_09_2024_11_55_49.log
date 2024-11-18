@@ -1,7 +1,0 @@
-[ 2024-11-09 11:55:49,045 ] 9 root - INFO - Step 1: Initializing application
-[ 2024-11-09 11:55:49,046 ] 13 root - INFO - Step 2: Performing calculation with values x=10 and y=0
-[ 2024-11-09 11:55:49,046 ] 51 root - ERROR - 
-Error occurred in Python script:
-→ File: /home/tahnik/MWC-Module-3-Modular-Workflow-and-Project-Setup-Basics/test-app.py
-→ Line number: 14
-→ Error message: division by zero

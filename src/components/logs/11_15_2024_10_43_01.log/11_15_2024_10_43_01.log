@@ -1,8 +1,0 @@
-[ 2024-11-15 10:43:05,367 ] 20 root - INFO - Data Ingesion has been started
-[ 2024-11-15 10:43:05,369 ] 22 root - INFO - Data reading using Pandas from local file system
-[ 2024-11-15 10:43:05,376 ] 44 root - INFO - Error occured in data ingestion stage
-[ 2024-11-15 10:43:05,379 ] 51 root - ERROR - 
-Error occurred in Python script:
-→ File: /home/tahnik/MWC-Module-3-Modular-Workflow-and-Project-Setup-Basics/src/components/data_ingestion.py
-→ Line number: 23
-→ Error message: [Errno 2] No such file or directory: 'data-source/income_cleandata.csv'
